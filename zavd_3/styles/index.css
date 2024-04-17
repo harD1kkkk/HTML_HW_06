@@ -1,0 +1,157 @@
+/* Font import */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Main */
+main {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Blank */
+.blank {
+    box-shadow: 0px 0px 1em #858585;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Forms */
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    border: none;
+    border-bottom: 1.2px solid #a5a5a5;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* Buttons */
+button.submit_btn {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: #008a8c;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hr */
+hr {
+    border: 1px solid #ececec;
+}
+
+/* Additional Options */
+.additional_options {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Media Queries */
+
+/* Screen width > 900px */
+@media screen and (min-width: 900px) {
+    .blank {
+        background: linear-gradient(45deg, rgb(249, 202, 202), rgb(173, 182, 255));
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .forms {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    /* Password fields */
+    .registration_fields .password_block .password_fields {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Personal details */
+    .personal_details .personal_details_fields {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* 600px < Screen width < 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .blank {
+        background: linear-gradient(45deg, rgb(233, 208, 255), rgb(192, 255, 173));
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    /* Password fields */
+    .registration_fields .password_block .password_fields {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Personal details */
+    .personal_details .personal_details_fields div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* Screen width < 600px */
+@media screen and (max-width: 600px) {
+    .blank {
+        background: linear-gradient(45deg, lightblue, rgb(255, 255, 177));
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .registration_form .registration_fields .password_block .password_fields {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

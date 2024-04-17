@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Data Input</title>
+
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="blank">
+
+      <div class="forms">
+
+        <form class="registration_form">
+
+          <span class="title">
+            Registration form
+          </span>
+
+          <div class="registration_fields">
+
+            <label class="username_block">
+              <img src="/assets/username.png" alt="username">
+              <input type="text" name="name" placeholder="Username">
+            </label>
+
+            <label class="e-address_block">
+              <img src="/assets/email.png" alt="email address">
+              <input type="email" name="email" placeholder="Email address">
+            </label>
+
+            <label class="password_block">
+              <img src="/assets/password.png" alt="password">
+              <div class="password_fields">
+                <input id="password" type="password" name="password" placeholder="Password">
+                <input id="conf_password" type="password" name="confirm_password" placeholder="Confirm password">
+              </div>
+            </label>
+          </div>
+        </form>
+
+        <form class="personal_details">
+          <span class="title">
+            Personal details
+          </span>
+
+          <div class="personal_details_fields">
+
+            <div class="fName_lName">
+              <label class="first_name_block">
+                <input type="text" name="firstName" placeholder="First name">
+              </label>
+
+              <label class="last_name_block">
+                <input type="text" name="lastName" placeholder="Last name">
+              </label>
+            </div>
+
+            <div class="state_date_block">
+              <label class="state_block">
+                <select class="state_select">
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </label>
+
+              <label class="date_of_birth_block">
+                <input type="text" name="dateOfBirth" placeholder="mm/dd/yy">
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="additional_options">
+          <div class="option_1">
+            <input type="checkbox" name="option_1" id="option_1">
+            <label for="option_1">I want to receive news and special offers</label>
+          </div>
+
+          <div class="option_2">
+            <input type="checkbox" name="option_2" id="option_2">
+            <label for="option_2">I agree with the Terms and Conditions</label>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="submit_button">
+        <button class="submit_btn">
+          SUBMIT
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

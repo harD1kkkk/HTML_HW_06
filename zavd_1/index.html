@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Payment Form</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <main>
+    <!-- Payment form -->
+    <div class="payment_form">
+      <!-- Payment form heading -->
+      <div class="form_heading">
+        <p class="heading_text">SECURE PAYMENT DETAILS</p>
+      </div>
+      <div class="content">
+        <!-- Card number block -->
+        <div class="card_number_block">
+          <label>Card Number</label>
+          <!-- Input card number field -->
+          <input type="number" id="card_number_input" placeholder="1234 5678 9012 3456">
+        </div>
+        <!-- Card holder name block -->
+        <div class="card_holder_block">
+          <label>Name On Card</label>
+          <input type="text" id="card_holder_input" placeholder="Name Surname">
+        </div>
+        <!-- Additional information -->
+        <div class="additional_info">
+          <!-- Expiry month -->
+          <div class="expiry_month">
+            <label>Expiry Month</label>
+            <input type="number" id="expiry_month_input" placeholder="MM">
+          </div>
+          <!-- Expiry year -->
+          <div class="expiry_year">
+            <label>Expiry Year</label>
+            <input type="number" id="expiry_year_input" placeholder="YYYY">
+          </div>
+          <!-- CVV / CVN -->
+          <div class="cvv_block">
+            <label>CVV / CVN</label>
+            <!-- Input CVV / CVN number -->
+            <input type="number" id="cvv_input" placeholder="***">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* For ALL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri Light", sans-serif;
+}
+
+/* BODY */
+body {
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+/* Input tags */
+input {
+  border: none;
+}
+
+/* Input [checkbox, radio] tags */
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+/* Image tags */
+img {
+  object-fit: cover;
+}
+
+/* Button tags */
+button {
+  padding: 6px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Form tag */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Title for every type of input tags */
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 0.1px;
+}
+
+textarea {
+  max-width: 300px;
+  height: 100px;
+  padding: 7px 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 5px;
+  &::placeholder {
+    color: #d2cfca;
+  }
+}
+
+/* Inputs */
+.inputs_types {
+  display: flex;
+  gap: 5px;
+}
+
+/* Input Block */
+.inputs_types .input {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 5px;
+}
+
+/* Empty input */
+.inputs_types .empty_input {
+  border-color: #c5c5c5;
+}
+
+.empty_input input::placeholder {
+  color: #c5c5c5;
+}
+
+/* Valid input */
+.inputs_types .valid_input {
+  border-color: #629867;
+}
+
+.valid_input input {
+  color: #629867;
+}
+
+.valid_input img {
+  height: 12px;
+}
+
+/* Invalid input */
+.inputs_types .invalid_input {
+  border-color: #ac5a70;
+}
+
+.invalid_input input {
+  color: #ac5a70;
+}
+
+.invalid_input img {
+  height: 16px;
+}
+
+/* Checkboxes */
+.toggles {
+  display: flex;
+  gap: 20px;
+}
+
+/* Switch */
+.switch input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 20px;
+  margin: 0;
+  vertical-align: top;
+  background: white;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.switch input[type="checkbox"]::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 20px;
+  height: 16px;
+  border-radius: 4px;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checked checkboxes */
+.switch input[type="checkbox"]:checked::after {
+  transform: translateX(73%);
+  background-color: #e54062;
+}
+
+/* Toggle color before and after subscribe */
+.switch input[type="checkbox"] {
+  border: 1px solid #43ad4b;
+}
+
+.switch input[type="checkbox"]::after {
+  background-color: #43ad4b;
+}
+
+.switch input[type="checkbox"]:checked {
+  border: 1px solid #e54062;
+}
+
+/* Radio buttons */
+.person_state {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.person_state div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.person_state input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  border-radius: 50%;
+}
+
+/* Male radio button */
+input[type="radio"]#male_id {
+  border: 2px solid #43ad4b;
+}
+
+input[type="radio"]#male_id:checked {
+  background-color: #43ad4b;
+  border-color: #43ad4b;
+}
+
+/* Female radio button */
+input[type="radio"]#female_id {
+  border: 2px solid #e54062;
+}
+
+input[type="radio"]#female_id:checked {
+  background-color: #e54062;
+  border-color: #e54062;
+}
+
+/* Buttons */
+.buttons_types {
+  display: flex;
+  gap: 8px;
+  max-height: 28.2px;
+  position: relative;
+}
+
+/* Button */
+.buttons_types button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Active btn */
+.active-btn {
+  background-color: #43ad4b;
+}
+
+.active-btn:active {
+  box-shadow: #2d742f 0px 0px 1em;
+}
+
+/* Hover button 1 */
+.hover-btn1 {
+  background-color: #2d742f;
+}
+
+.hover-btn1:hover {
+  background-color: #43ad4b;
+}
+
+/* Danger btn */
+.danger-btn {
+  background-color: #e54062;
+}
+
+/* Hover button 2 */
+.hover-btn2 {
+  background-color: #95283e;
+}
+
+.hover-btn2:hover {
+  background-color: #e54062;
+}
+
+/* Disabled button */
+.disabled-btn {
+  background-color: #808080;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Plus and Minus buttons */
+.plus-btn {
+  background-color: #43ad4b;
+}
+
+.minus-btn {
+  background-color: #e54062;
+}
+
+.plus-btn,
+.minus-btn {
+  padding: 0;
+  min-width: 28.2px;
+  border-radius: 50% !important;
+}
